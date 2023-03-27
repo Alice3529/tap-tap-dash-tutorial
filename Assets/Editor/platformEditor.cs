@@ -62,7 +62,6 @@ public class platformEditor : Editor
         {
             Block(parent, bottomPosY + i * blockScale, gameSettings.squareBlock); // create square blocks in the middle
         }
-        Debug.Log((blockAmount - 1) * blockScale);
         GameObject endBlock=Block(parent, bottomPosY + (blockAmount - 1) * blockScale, gameSettings.roundedBlock).gameObject; //create rounded square block in the end
         endBlock.gameObject.AddComponent<pointer>(); //add the pointer script to the end block
     }
